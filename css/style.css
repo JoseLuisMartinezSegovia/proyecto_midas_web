@@ -6,8 +6,27 @@
 
 }
 
+.vistaMobile{
+    display: none;
+    
+    background-color: #048DEA;
+    
+    .logo{/*icono logo header*/
+        width: 100px;
+        height: 100px;
+        border-radius: 160px;
+    }
 
-.header{
+    
+    
+}
+
+
+.vistaEscritorio{
+    
+    background-color: #048DEA;
+    color: aliceblue;
+
     .contenedorLogo{
         padding-left: 20px;/*para separar logo de la pantalla*/
         
@@ -17,12 +36,16 @@
             width: 100px;
             height: 100px;
             border-radius: 160px;
+
         }
     }
     
 
-    background-color: #048DEA;
-    color: aliceblue;
+.icon-products{
+    width: 40px;
+    height: 40px;
+}
+    
 
   .navegacion{    
     display: inline-block; /*para que se ubique a lado del contenedor logo*/
@@ -35,20 +58,21 @@
         .listaItem{/*li*/
             display: inline-block;
 
-            .linkNav{/*a*/
-        
-                display: inline-block;
-                text-decoration: none;
-                color: aliceblue;
-                font-size: 1.5rem;
-                margin-right: 15px;
-                margin-bottom: 15px;
-                border: 1px solid gray;
-            }
+            
         }
 
     }
-  }    
+  }   
+  .linkNav{/*a*/
+        
+    display: inline-block;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+} 
     
 
 }
@@ -56,12 +80,12 @@
 .main{
     background-color: #035892 ;
     color: aliceblue;
-    height: 400px;
+    height: 670px;
 
     .titulo-main{
         text-align: center;
     }
-    .video-main{
+    .foto-main{
         text-align: center;
     }
     
@@ -70,12 +94,12 @@
 
 
 .footer{
-    display:inline-flex;
+    display:flex;
     justify-content:space-between;
     background-color: #023558 ;
     color: aliceblue;
     width: 100%;
-    height: 400px;
+    height: 100%;
     .icon-footer{
        
         display: inline-block;
@@ -90,15 +114,26 @@
         border-radius:150px;
         
     }
+    .lista-footer{
+        display: flex;
+    }
     .div-mapa {
         display: inline-flex;
     }
 
     .mapa{
         width: 250px;
-        height: 250px;
+        height: 200px;
     }
     
 }
 
+@media screen and (max-width: 768px) {
+    .vistaEscritorio{
+        display:none;
+    }
+    .vistaMobile{
+        display:flex;
+    }
+}
 

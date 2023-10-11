@@ -4,50 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midas Soluciones Web</title>
+    
+    <link rel="icon" type="image/png" href="/pages/favicon.ico.jpg">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" type="image/png" href="/html/favicon.ico.jpg">
 </head>
 <body>
 <!--Coniene la cabecera de las páginas del sitio-->
     <header class="header">
-      
+
+    <div class="vistaMobile"> <!--VERSION MOBILE-->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid ">
+                <div class="contenedorLogo">   
+                    <a href="/index.html">
+                      <img src="/assets/midas.jpg" alt="imagen logo" class="logo">
+                    </a> 
+                </div> 
+            <div>
+              <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+              </button>
+            </div>
+              <div class="collapse navbar-collapse  " id="navbarNav">
+                <ul class="navbar-nav  ">
+                  <li class="listaItem">
+                    <a class="linkNav" aria-current="page" href="/pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="listaItem">
+                    <a class="linkNav" aria-current="page" href="/pages/servicios.html">Servicios</a>
+                  </li>
+                  <li class="listaItem">
+                    <a class="linkNav" aria-current="page" href="/pages/portafolio.html">Portafolio</a>
+                  </li>
+                  <li class="listaItem">
+                    <a class="linkNav" aria-current="page" href="/pages/contacto.html">Contacto</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </div>
+    
+    <div class="vistaEscritorio">
         <div class="contenedorLogo">   
-            <a href="index.html">
+            <a href="/index.html">
               <img src="/assets/midas.jpg" alt="imagen logo" class="logo">
             </a> 
         </div> 
 
         <nav class="navegacion">
           <ul class="listNav">
-            <li class="listaItem"><a class="linkNav" href="nosotros.html">Nosotros</a></li>
-            <li class="listaItem"><a class="linkNav" href="servicios.html">Servicios</a></li>
-            <li class="listaItem"><a class="linkNav" href="portafolio.html">Portafolio</a></li>
-            <li class="listaItem"><a class="linkNav" href="contacto.html">Contacto</a></li>
+            <li class="listaItem"><a class="linkNav" href="/pages/nosotros.html">Nosotros</a></li>
+            <li class="listaItem"><a class="linkNav" href="/pages/servicios.html">Servicios</a></li>
+            <li class="listaItem"><a class="linkNav" href="/pages/portafolio.html">Portafolio</a></li>
+            <li class="listaItem"><a class="linkNav" href="/pages/contacto.html">Contacto</a></li>
           </ul>
         </nav>
 
-      
+    </div>  
+
     </header>
 
     <!--Aquí inicia el contenido principal de la página-->
     <main class="main">
 
         <div class="titulo-main">
-            <h1>AYUDAMOS A CRECER TU NEGOCIO CON SOLUCIONES WEB agregando un commit manual </h1>
+            <h1>AYUDAMOS A CRECER TU NEGOCIO CON SOLUCIONES WEB </h1>
+            
+
         </div>
 
-        <div class="video-main">
-            <iframe class="video-index" width="560" height="315" src="https://www.youtube.com/embed/cpqXs8KZNA8?si=dsllK7rPEWWbEIU1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="foto-main">
+            <img src="/assets/Photo1.jpg" alt="" class="center-block">
         </div>
 
     </main>
     <!--Contenido de pie en cada página-->
-    <footer class="footer">
+    <footer class="container-fluid p-3 footer d-flex felx-column">
         
-        <div class="div-icons-footer" >
+        
             <h2>Nuestras redes sociales</h2>
-
-            <ul class="ul-footer">
+        <div>
+            <ul class="lista-footer">
                 <li class="icon-footer"><a href="www.facebook.com" target="_blank"><img class="img-footer" src="/assets/face.jpg" alt="logo face" ></a></li>
                 <li class="icon-footer"><a href="www.instagram.com" target="_blank"><img class="img-footer" src="/assets/insta.jpg" alt="logo insta"></a></li>
                 <li class="icon-footer"><a href="www.snapchat.com" target="_blank"><img class="img-footer" src="/assets/snao.jpg" alt="logo snapchat"></a></li>
@@ -55,6 +95,8 @@
                 
             </ul>
         </div>
+
+        
 
         
 
@@ -74,8 +116,10 @@
 
         </div>
 
-     
+    
     </footer>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>
